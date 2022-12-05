@@ -44,10 +44,6 @@ class Main:
         avg_color = numpy.average(avg_color_per_row, axis=0)
         output = [avg_color[0], avg_color[1], avg_color[2]]
 
-        # hls = colorsys.rgb_to_hls(avg_color[0],avg_color[1],avg_color[2])
-        # new_saturation = hls[1] * 1.25
-        # output = list(colorsys.hls_to_rgb(hls[0],hls[1],hls[2]))
-
         self.rgb = output
 
     def calculate_brightness(self):
